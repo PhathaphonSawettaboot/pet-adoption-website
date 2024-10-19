@@ -12,7 +12,7 @@ async function start() {
 start()
 
 async function petsArea() {
-  const petsAreaPromise = await fetch('https://learnwebcode.github.io/bootcamp-pet-data/pets.json')
+  const petsAreaPromise = await fetch('https://meek-entremet-4f4e55.netlify.app/.netlify/functions/pets')
   const PetsAreaData = await petsAreaPromise.json()
   PetsAreaData.forEach(pet => {
     const clone = template.content.cloneNode(true)
